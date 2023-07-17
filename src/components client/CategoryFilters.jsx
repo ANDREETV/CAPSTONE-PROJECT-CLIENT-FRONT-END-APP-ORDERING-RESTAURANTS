@@ -17,7 +17,7 @@ import jwt_decode from 'jwt-decode';
 const filters = [
   {
     id: 'category',
-    name: 'Category',
+    name: 'Categoria',
   },
 ];
 
@@ -390,7 +390,7 @@ export default function CategoryFilters() {
                 <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl">
                   <div className="flex items-center justify-between px-4">
                     <h2 className="text-lg font-medium text-gray-900">
-                      Filters
+                      Filtri
                     </h2>
                     <button
                       type="button"
