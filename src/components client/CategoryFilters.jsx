@@ -397,15 +397,12 @@ export default function CategoryFilters() {
                       className="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white p-2 text-gray-400"
                       onClick={() => setMobileFiltersOpen(false)}
                     >
-                      <span className="sr-only">Close menu</span>
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </button>
                   </div>
 
-                  {/* Filters */}
+                  {/* Filters  */}
                   <form className={`mt-4 border-t border-gray-200`}>
-                    <h3 className="sr-only">Categories</h3>
-
                     {filters.map((section) => (
                       <Disclosure
                         as="div"
@@ -508,7 +505,7 @@ export default function CategoryFilters() {
             </div>
 
             <div className="flex items-center text-green-400">
-              {/* CARRELLO  */}
+              {/* CART  */}
               <Badge content={cartCount} withBorder>
                 <button
                   onClick={handleDrawerToggle}
@@ -518,14 +515,13 @@ export default function CategoryFilters() {
                   <ShoppingCartIcon className="h-7 w-7" aria-hidden="true" />
                 </button>
               </Badge>
-              {/* FILTRO MOBILE */}
+              {/* MOBILE FILTER */}
 
               <button
                 type="button"
                 className="-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden"
                 onClick={() => setMobileFiltersOpen(true)}
               >
-                <span className="sr-only">Filters</span>
                 <FunnelIcon className="h-5 w-5" aria-hidden="true" />
               </button>
             </div>
