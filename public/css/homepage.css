@@ -1,0 +1,18 @@
+.bodyPage {
+  height: 100vh;
+  background-image: url('../images/newbannerhomepage.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  background-image: url('../images/banner.jpg');
+  height: 50px;
+  width: 50px;
+  background-position: center;
+}
+
+.navHome {
+  background-color: red;
+}
