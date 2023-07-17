@@ -129,21 +129,6 @@ export default function Register() {
           <Button onClick={formSubmitRegister} className="mt-6" fullWidth>
             Register
           </Button>
-          <div className="flex justify-center">
-            <Button
-              size="lg"
-              variant="outlined"
-              color="blue-gray"
-              className="flex items-center text-white gap-3 mt-5"
-            >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1024px-2021_Facebook_icon.svg.png"
-                alt="metamask"
-                className="h-6 w-6"
-              />
-              Registrati con FACEBOOK
-            </Button>
-          </div>
           <Typography color="white" className="mt-4 text-center font-normal">
             Hai già un account fai{' '}
             <Link
