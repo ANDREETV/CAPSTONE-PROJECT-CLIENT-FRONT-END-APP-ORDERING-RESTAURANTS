@@ -54,6 +54,7 @@ export default function SearchProducts({
           <option value="Pizza">Pizza</option>
           <option value="Dolce">Dolce</option>
           <option value="Sushi">Sushi</option>
+          <option value="Bere">Bere</option>
         </select>
       </form>
     </div>

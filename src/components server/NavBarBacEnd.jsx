@@ -12,7 +12,7 @@ export default function NavBarBacEnd() {
     <Navbar
       variant="gradient"
       color="blue-gray"
-      className="rounded-none max-w-none flex items-center from-blue-gray-900 to-blue-gray-800 px-4 py-3 overflow-hidden  sticky top-0 z-10"
+      className="rounded-none max-w-none flex items-center from-blue-gray-900 to-blue-gray-800 px-4 py-3 overflow-hidden  sticky top-0 z-30"
     >
       <div className="me-5" onClick={openDrawer}>
         <Bars3BottomLeftIcon strokeWidth={2} className="h-10 w-10" />

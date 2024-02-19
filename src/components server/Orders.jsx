@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Card,
   IconButton,
   Typography,
   Button,
@@ -199,11 +198,13 @@ export default function Orders() {
                 <Dialog
                   open={open[_id] || false}
                   handler={() => handleOpenOrder({ _id, orders })}
+                  style={{ height: '500px' }}
+                  className=" overflow-scroll"
                 >
                   <DialogHeader>Tavolo n.{tableNumber} </DialogHeader>
                   <DialogBody divider>
-                    <table className="w-full min-w-max table-auto text-left">
-                      <thead>
+                    <table className="w-full min-w-max table-auto text-left ">
+                      <thead className="sticky top-1 z-20">
                         <tr>
                           {TABLE_HEAD.map((head) => (
                             <th
@@ -221,6 +222,7 @@ export default function Orders() {
                           ))}
                         </tr>
                       </thead>
+
                       <tbody>
                         {orderModel && orderModel.length ? (
                           orderModel.map((product) => (
@@ -274,7 +276,7 @@ export default function Orders() {
                       </tbody>
                     </table>
                   </DialogBody>
-                  <DialogFooter>
+                  <DialogFooter className="sticky botton-1 z-20">
                     <Button
                       variant="text"
                       color="red"

@@ -25,6 +25,7 @@ const productsCategory = [
   { id: 1, name: 'Pizza', category: 'Pizza', color: 'green' },
   { id: 2, name: 'Sushi', category: 'Sushi', color: 'red' },
   { id: 3, name: 'Dolce', category: 'Dolce', color: 'amber' },
+  { id: 4, name: 'Bere', category: 'Bere', color: 'blue' },
 ];
 
 const BASEURL = 'http://localhost:3001/products';
@@ -61,7 +62,7 @@ export default function CategoryFilters() {
   const sortedByCategory = filteredProducts.sort((a, b) =>
     a.category.localeCompare(b.category)
   );
-  const categoryOrder = ['Pizza', 'Sushi', 'Dolce'];
+  const categoryOrder = ['Pizza', 'Sushi', 'Dolce', 'Bere'];
 
   const customSortedProducts = sortedByCategory.sort((a, b) => {
     const indexA = categoryOrder.indexOf(a.category);
@@ -573,7 +574,7 @@ export default function CategoryFilters() {
               </div>
             )}
             {!loading && (
-              <div className=" grid grid-cols-1 gap-x-6 flex-wrap gap-y-10 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5">
+              <div className=" grid grid-cols-1 gap-x-6 flex-wrap gap-y-10 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-3">
                 {customSortedProducts.map((product, i) => (
                   <div>
                     {product.inCart && (
@@ -598,7 +599,7 @@ export default function CategoryFilters() {
                           className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                         />
                       </div>
-                      <div className="mt-4 mb-4 flex justify-around px-2 h-[100px]">
+                      <div className="mt-4 mb-4 flex justify-around px-2 h-[60px]">
                         <div>
                           <h2 className="text-sm font-bold text-gray-700">
                             {product.category}

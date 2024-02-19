@@ -130,6 +130,10 @@ export default function TabellaProdotti() {
       const filtered = products.filter((elem) => elem.category === 'Dolce');
       setFilteredCategory(filtered);
       setFilteredProducts(filtered);
+    } else if (category === 'Bere') {
+      const filtered = products.filter((elem) => elem.category === 'Bere');
+      setFilteredCategory(filtered);
+      setFilteredProducts(filtered);
     }
   };
 

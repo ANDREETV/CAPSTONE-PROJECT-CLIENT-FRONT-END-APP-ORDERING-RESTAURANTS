@@ -40,13 +40,13 @@ export default function SideBarBacEnd({ openDash, closeDrawer }) {
   const logout = (e) => {
     e.preventDefault();
     localStorage.removeItem('userLogin');
-    navigate('/');
+    navigate('/admin');
   };
 
   return (
     <>
       <Drawer open={openDash} onClose={closeDrawer}>
-        <div className="mb-2 flex items-center justify-between p-4 z-30">
+        <div className="mb-2 flex items-center justify-between p-4 ">
           <Typography variant="h5" color="blue-gray">
             MENU
           </Typography>
@@ -85,7 +85,7 @@ export default function SideBarBacEnd({ openDash, closeDrawer }) {
             </ListItem>
             <AccordionBody className="py-1">
               <List className="p-0">
-                <Link
+                {/* <Link
                   to={'/aggiungi-prodotti'}
                   onClick={() => {
                     closeDrawer();
@@ -98,7 +98,7 @@ export default function SideBarBacEnd({ openDash, closeDrawer }) {
                     </ListItemPrefix>
                     Aggiungi Prodotti
                   </ListItem>
-                </Link>
+                </Link> */}
                 <Link
                   to={'/prodotti'}
                   onClick={() => {
