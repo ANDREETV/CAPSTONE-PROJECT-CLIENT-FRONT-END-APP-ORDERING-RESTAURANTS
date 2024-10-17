@@ -499,7 +499,7 @@ export default function TableProducts() {
       </CardBody>
       <CardFooter className="flex items-center justify-between border-t border-blue-gray-50 p-4">
         <Typography variant="small" color="blue-gray" className="font-normal">
-          Page {currentPage} of {totalPages}
+          Pagina {currentPage} di {totalPages}
         </Typography>
         <div className="flex gap-2">
           <Button
@@ -509,7 +509,7 @@ export default function TableProducts() {
             onClick={() => setCurrentPage(currentPage - 1)}
             disabled={currentPage === 1}
           >
-            Previous
+            Indietro
           </Button>
           <Button
             variant="outlined"
@@ -518,7 +518,7 @@ export default function TableProducts() {
             onClick={() => setCurrentPage(currentPage + 1)}
             disabled={currentPage === totalPages}
           >
-            Next
+            Avanti
           </Button>
         </div>
       </CardFooter>
